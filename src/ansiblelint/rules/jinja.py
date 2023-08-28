@@ -15,7 +15,6 @@ from jinja2.exceptions import TemplateSyntaxError
 from ruamel.yaml.comments import CommentedMap, CommentedSeq
 
 from ansiblelint.constants import LINE_NUMBER_KEY
-from ansiblelint.errors import MatchError
 from ansiblelint.file_utils import Lintable
 from ansiblelint.rules import AnsibleLintRule, TransformMixin
 from ansiblelint.skip_utils import get_rule_skips_from_line
@@ -24,8 +23,6 @@ from ansiblelint.utils import parse_yaml_from_file, template
 from ansiblelint.yaml_utils import deannotate, nested_items_path
 
 if TYPE_CHECKING:
-    from ruamel.yaml.comments import CommentedMap, CommentedSeq
-
     from ansiblelint.errors import MatchError
     from ansiblelint.utils import Task
 

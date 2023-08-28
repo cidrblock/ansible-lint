@@ -96,6 +96,18 @@ def fixture_runner_result(
             True,
             id="cmd_instead_of_shell",
         ),
+        pytest.param(
+            "examples/playbooks/transform-deprecated-local-action.yml",
+            1,
+            True,
+            id="dep_local_action",
+        ),
+        pytest.param(
+            "examples/playbooks/transform-jinja.yml",
+            4,
+            True,
+            id="jinja_spacing",
+        ),
     ),
 )
 def test_transformer(  # pylint: disable=too-many-arguments, too-many-locals
