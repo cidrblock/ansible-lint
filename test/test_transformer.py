@@ -104,7 +104,7 @@ def fixture_runner_result(
         ),
         pytest.param(
             "examples/playbooks/transform-jinja.yml",
-            4,
+            7,
             True,
             id="jinja_spacing",
         ),
